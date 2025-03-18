@@ -1,0 +1,98 @@
+
+<html>
+    <body> 
+       <h1><i>hello </i></h1>
+       <p id="id1">hay xem chung ta co gi nao</p>
+       <button type="button" onclick='document.getElementById("id1").innerHTML="hehe"'>an vao day</button>
+       <button type="button" onclick='document.getElementById("id1").style.fontSize="40"'>doi kich coi</button>
+       <button type="button" onclick='document.getElementById("id1").style.display="None"'>bien mat</button>
+       <button type="button" onclick="document.getElementById('id1').style.display='block'">xuan hien</button>
+
+
+       
+   
+<p id = "id2">day la phan hai</p>
+<script>
+    document.getElementById('id2').innerHTML='da thay doi'
+</script>
+
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:200px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+
+<h2>Demo External JavaScript</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="fs1()">Try it</button>
+<button type="button" onclick="fs2()">day laf function 2</button>
+
+<p>This example links to "myScript.js".</p>
+<p>(myFunction is stored in "myScript.js")</p>
+
+<script src="myScript.js"></script>
+
+<script>
+    window.alert("chao mung ban den voi trang web nay")
+</script>
+
+<script>
+    console.log(1+1)
+</script>
+
+<button type="button" onclick="window.print()">in trang nay</button>
+
+<p id="id3">chuong trinh javasript la mot tap hop cac cau lenh duoc may tinh thuc thi</p>
+<h3> 
+    ta co :  a = 5  . b = 10 . c = b-a
+</h3>
+<script>
+    let a , b , c ;
+    a=5;
+    b=10;
+    c=b-a;
+    
+</script>
+<button type="button"onclick="document.getElementById('id3').innerHTML='gia tri cua c = ' + c +'.'">an vao day de thay gia tri cua c</button>
+
+
+<h2> cau lenh javasript </h2>
+<p >cac khoi ma javasript duoc viet </p>
+<p id = "id4"> </p>
+<p id ="id5"> </p>
+<button type="button"onclick="Myfunction()">an vao day</button>
+<script>
+    function Myfunction(){
+        document.getElementById("id4").innerHTML="hello ban nho ! ";
+        document.getElementById("id5").innerHTML="ban khoe khong ?";
+    }
+</script>
+</body>
+</html>
+
+
+
+<script>
+    function fs1(){
+        document.getElementById("demo").innerHTML="hello hehehe"
+    }
+</script>
+
+<script> 
+    function fs2(){
+        document.getElementById("demo").innerHTML="function 2 ne"
+    }
+</script>
+
+<button type="button" onclick="document.write('ban da xoa tat ca')">an vao day de xoa tat ca </button>
+
